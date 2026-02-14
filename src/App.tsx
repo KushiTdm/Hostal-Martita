@@ -15,9 +15,9 @@ function App() {
     <HelmetProvider>
       <LanguageProvider>
         <SEO />
-        <div className="min-h-screen">
+        <div className="min-h-screen overflow-x-hidden">
           <Header />
-          <main>
+          <main className="overflow-x-hidden">
             <Hero />
             <About />
             <Rooms />

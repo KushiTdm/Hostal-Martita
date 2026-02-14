@@ -22,7 +22,7 @@ export function Hero() {
         ? "Hola Martita, quisiera reservar una habitación en Martita's House."
         : "Hello Martita, I would like to book a room at Martita's House."
     );
-    window.open(`https://wa.me/${siteData.config.whatsapp_main}?text=${message}`, '_blank');
+    window.open(`https://wa.me/${siteData.config.whatsapp_main}?text=${message}`, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -60,7 +60,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           onClick={handleBooking}
-          className="bg-warmth hover:bg-warmth/90 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105 shadow-2xl"
+          className="bg-[#25D366] hover:bg-[#20BA5A] text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105 shadow-2xl"
         >
           {hero.cta[language]}
         </motion.button>

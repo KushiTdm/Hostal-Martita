@@ -16,6 +16,17 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleWhatsAppClick = () => {
+    const message = language === 'fr'
+      ? "Bonjour Martita, j'aimerais avoir plus d'informations sur Martita's House. Merci !"
+      : language === 'es'
+      ? "Hola Martita, me gustaría tener más información sobre Martita's House. ¡Gracias!"
+      : "Hello Martita, I would like to have more information about Martita's House. Thank you!";
+    
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/${siteData.config.whatsapp_main}?text=${encodedMessage}`, '_blank', 'noopener,noreferrer');
+  };
+
   const navItems = [
     { label: { fr: 'Accueil', es: 'Inicio', en: 'Home' }, href: '#hero' },
     { label: { fr: 'À propos', es: 'Nosotros', en: 'About' }, href: '#about' },
@@ -68,13 +79,13 @@ export function Header() {
             ))}
           </div>
 
-          <a
-            href={`https://wa.me/${siteData.config.whatsapp_main}`}
+          <button
+            onClick={handleWhatsAppClick}
             className="hidden md:flex items-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg hover:bg-[#20BA5A] transition-colors"
           >
             <Phone size={18} />
             <span>WhatsApp</span>
-          </a>
+          </button>
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -98,13 +109,13 @@ export function Header() {
                 {item.label[language]}
               </a>
             ))}
-            <a
-              href={`https://wa.me/${siteData.config.whatsapp_main}`}
-              className="flex items-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg hover:bg-[#20BA5A] transition-colors justify-center"
+            <button
+              onClick={handleWhatsAppClick}
+              className="flex items-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg hover:bg-[#20BA5A] transition-colors justify-center w-full"
             >
               <Phone size={18} />
               <span>WhatsApp</span>
-            </a>
+            </button>
           </nav>
         </div>
       )}

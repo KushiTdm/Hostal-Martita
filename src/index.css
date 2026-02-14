@@ -7,6 +7,7 @@
 @layer base {
   body {
     @apply font-sans text-earth bg-stone;
+    overflow-x: hidden;
   }
 
   h1, h2, h3 {
@@ -15,5 +16,16 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  * {
+    max-width: 100%;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%;
   }
 }

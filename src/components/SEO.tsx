@@ -33,14 +33,14 @@ export function SEO() {
       <meta property="og:type" content="website" />
       <meta property="og:title" content={titles[language]} />
       <meta property="og:description" content={descriptions[language]} />
-      <meta property="og:image" content="https://images.unsplash.com/photo-1583062820300-88031e793910?q=80&w=1200" />
+      <meta property="og:image" content="https://martita-hostal.netlify.app/images/martitas-house.jpeg" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={titles[language]} />
       <meta name="twitter:description" content={descriptions[language]} />
-      <meta name="twitter:image" content="https://images.unsplash.com/photo-1583062820300-88031e793910?q=80&w=1200" />
+      <meta name="twitter:image" content="https://martita-hostal.netlify.app/images/martitas-house.jpeg" />
 
-      <link rel="canonical" href={`https://martitashouse.com/${language}`} />
+      <link rel="canonical" href={`https://martita-hostal.netlify.app/${language}`} />
 
       <meta name="geo.region" content="EC" />
       <meta name="geo.placename" content="Quilotoa" />

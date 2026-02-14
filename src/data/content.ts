@@ -71,17 +71,40 @@ export const siteData = {
             en: "Family Room with Bathtub" 
           },
           details: "55m² | 6 Pax",
+          capacity: 6,
           price: "72",
           image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=600",
           beds: {
-            fr: "2 lits simples et 2 grands lits doubles",
-            es: "2 camas individuales y 2 camas dobles grandes",
-            en: "2 single beds and 2 large double beds"
+            fr: "2 lits simples et 2 grands lits doubles (4 lits au total)",
+            es: "2 camas individuales y 2 camas dobles grandes (4 camas en total)",
+            en: "2 single beds and 2 large double beds (4 beds total)"
+          },
+          description: {
+            fr: "La spacieuse chambre familiale dispose d'une armoire et d'un sèche-linge, ainsi que d'une salle de bains privative avec baignoire. Elle offre du parquet, le chauffage et une vue sur la montagne.",
+            es: "La espaciosa habitación familiar ofrece armario y secadora, así como baño privado con bañera. Proporciona suelos de parqué, calefacción y vistas a la montaña.",
+            en: "The spacious family room offers a wardrobe and tumble dryer, as well as a private bathroom boasting a bath. The family room provides parquet floors, heating and mountain views."
+          },
+          bathroom: {
+            fr: ["Articles de toilette gratuits", "Toilettes", "Baignoire ou douche", "Serviettes", "Papier toilette"],
+            es: ["Artículos de aseo gratuitos", "Inodoro", "Bañera o ducha", "Toallas", "Papel higiénico"],
+            en: ["Free toiletries", "Toilet", "Bath or shower", "Towels", "Toilet paper"]
+          },
+          views: {
+            fr: ["Vue sur la montagne", "Vue sur la ville"],
+            es: ["Vista a la montaña", "Vista a la ciudad"],
+            en: ["Mountain view", "City view"]
           },
           amenities: { 
-            fr: ["Baignoire", "Vue Montagne/Ville", "Parquet", "Chauffage", "Sèche-linge"], 
-            es: ["Bañera", "Vista Montaña/Ciudad", "Parqué", "Calefacción", "Secadora"], 
-            en: ["Bathtub", "Mountain/City View", "Parquet", "Heating", "Tumble dryer"] 
+            fr: ["Parquet", "Prise près du lit", "Chauffage", "Sèche-linge", "Armoire ou penderie", "Étendoir", "Baignoire", "Vue Montagne/Ville"], 
+            es: ["Parqué", "Enchufe cerca de la cama", "Calefacción", "Secadora", "Armario", "Tendedero", "Bañera", "Vista Montaña/Ciudad"], 
+            en: ["Parquet flooring", "Socket near the bed", "Heating", "Tumble dryer", "Wardrobe", "Clothes rack", "Bathtub", "Mountain/City View"] 
+          },
+          rating: "8.5",
+          reviews: "32",
+          smoking: {
+            fr: "Non-fumeurs",
+            es: "No fumadores",
+            en: "Non-smoking"
           }
         },
         {
@@ -91,17 +114,40 @@ export const siteData = {
             en: "Family Room with Balcony" 
           },
           details: "30m² | 5 Pax",
+          capacity: 5,
           price: "65",
           image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=600",
           beds: {
-            fr: "1 lit double, 1 lit superposé et 1 grand lit double",
-            es: "1 cama doble, 1 litera y 1 cama doble grande",
-            en: "1 double bed, 1 bunk bed, and 1 large double bed"
+            fr: "1 lit double, 1 lit superposé et 1 grand lit double (3 lits au total)",
+            es: "1 cama doble, 1 litera y 1 cama doble grande (3 camas en total)",
+            en: "1 double bed, 1 bunk bed, and 1 large double bed (3 beds total)"
+          },
+          description: {
+            fr: "La chambre familiale dispose d'une armoire, d'un sèche-linge, d'un balcon avec vue sur les montagnes ainsi que d'une salle de bains privative avec baignoire.",
+            es: "La habitación familiar cuenta con armario, secadora, balcón con vistas a la montaña y baño privado con bañera.",
+            en: "The family room features a wardrobe, tumble dryer, a balcony with mountain views as well as a private bathroom boasting a bath."
+          },
+          bathroom: {
+            fr: ["Articles de toilette gratuits", "Toilettes", "Baignoire ou douche", "Serviettes", "Papier toilette"],
+            es: ["Artículos de aseo gratuitos", "Inodoro", "Bañera o ducha", "Toallas", "Papel higiénico"],
+            en: ["Free toiletries", "Toilet", "Bath or shower", "Towels", "Toilet paper"]
+          },
+          views: {
+            fr: ["Vue sur la montagne", "Vue sur la ville"],
+            es: ["Vista a la montaña", "Vista a la ciudad"],
+            en: ["Mountain view", "City view"]
           },
           amenities: { 
-            fr: ["Balcon", "Vue Montagne", "Parquet", "Chauffage", "Sèche-linge"], 
-            es: ["Balcón", "Vista Montaña", "Parqué", "Calefacción", "Secadora"], 
-            en: ["Balcony", "Mountain View", "Parquet", "Heating", "Tumble dryer"] 
+            fr: ["Balcon", "Parquet", "Prise près du lit", "Chauffage", "Sèche-linge", "Armoire ou penderie", "Étendoir"],
+            es: ["Balcón", "Parqué", "Enchufe cerca de la cama", "Calefacción", "Secadora", "Armario", "Tendedero"],
+            en: ["Balcony", "Parquet flooring", "Socket near the bed", "Heating", "Tumble dryer", "Wardrobe", "Clothes rack"] 
+          },
+          rating: "8.5",
+          reviews: "32",
+          smoking: {
+            fr: "Non-fumeurs",
+            es: "No fumadores",
+            en: "Non-smoking"
           }
         },
         {
@@ -111,17 +157,40 @@ export const siteData = {
             en: "Triple Room with Bath & Fireplace" 
           },
           details: "25m² | 3 Pax",
+          capacity: 3,
           price: "55",
           image: "https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=600",
           beds: {
-            fr: "1 lit simple et 1 grand lit double",
-            es: "1 cama individual y 1 cama doble grande",
-            en: "1 single bed and 1 large double bed"
+            fr: "1 lit simple et 1 grand lit double (2 lits au total)",
+            es: "1 cama individual y 1 cama doble grande (2 camas en total)",
+            en: "1 single bed and 1 large double bed (2 beds total)"
+          },
+          description: {
+            fr: "Cette chambre triple dispose d'une cheminée. Elle offre une armoire, un sèche-linge, une terrasse avec vue sur les montagnes ainsi qu'une salle de bains privative avec baignoire.",
+            es: "Esta habitación triple cuenta con chimenea. Ofrece armario, secadora, terraza con vistas a la montaña y baño privado con bañera.",
+            en: "This triple room features a fireplace. The triple room provides a wardrobe, tumble dryer, a terrace with mountain views as well as a private bathroom featuring a bath."
+          },
+          bathroom: {
+            fr: ["Articles de toilette gratuits", "Toilettes", "Baignoire ou douche", "Serviettes", "Papier toilette"],
+            es: ["Artículos de aseo gratuitos", "Inodoro", "Bañera o ducha", "Toallas", "Papel higiénico"],
+            en: ["Free toiletries", "Toilet", "Bath or shower", "Towels", "Toilet paper"]
+          },
+          views: {
+            fr: ["Vue sur la montagne", "Vue sur la ville"],
+            es: ["Vista a la montaña", "Vista a la ciudad"],
+            en: ["Mountain view", "City view"]
           },
           amenities: { 
-            fr: ["Cheminée", "Balcon", "Terrasse/Patio", "Vue Montagne", "Parquet"], 
-            es: ["Chimenea", "Balcón", "Terraza/Patio", "Vista Montaña", "Parqué"], 
-            en: ["Fireplace", "Balcony", "Terrace/Patio", "Mountain View", "Parquet"] 
+            fr: ["Cheminée", "Balcon", "Terrasse", "Patio", "Parquet", "Prise près du lit", "Chauffage", "Sèche-linge", "Armoire ou penderie", "Étendoir"],
+            es: ["Chimenea", "Balcón", "Terraza", "Patio", "Parqué", "Enchufe cerca de la cama", "Calefacción", "Secadora", "Armario", "Tendedero"],
+            en: ["Fireplace", "Balcony", "Terrace", "Patio", "Parquet flooring", "Socket near the bed", "Heating", "Tumble dryer", "Wardrobe", "Clothes rack"] 
+          },
+          rating: "8.5",
+          reviews: "32",
+          smoking: {
+            fr: "Non-fumeurs",
+            es: "No fumadores",
+            en: "Non-smoking"
           }
         },
         {
@@ -131,17 +200,40 @@ export const siteData = {
             en: "Economic Quadruple Room (Accessible)" 
           },
           details: "25m² | 4 Pax",
+          capacity: 4,
           price: "60",
           image: "/images/rooms/Quadruple-bedroom.jpg",
           beds: {
-            fr: "2 lits simples et 1 grand lit double",
-            es: "2 camas individuales y 1 cama doble grande",
-            en: "2 single beds and 1 large double bed"
+            fr: "2 lits simples et 1 grand lit double (3 lits au total)",
+            es: "2 camas individuales y 1 cama doble grande (3 camas en total)",
+            en: "2 single beds and 1 large double bed (3 beds total)"
+          },
+          description: {
+            fr: "La cheminée est l'élément remarquable de cette chambre quadruple. Avec articles de toilette gratuits, cette chambre quadruple comprend une salle de bains privative avec baignoire. Parmi les équipements : armoire, sèche-linge, parquet, patio et vue sur la montagne. Entièrement accessible en fauteuil roulant.",
+            es: "La chimenea es la característica destacada de esta habitación cuádruple. Con artículos de aseo gratuitos, esta habitación incluye baño privado con bañera. Entre los equipamientos: armario, secadora, parqué, patio y vistas a la montaña. Totalmente accesible en silla de ruedas.",
+            en: "The fireplace is the standout feature of this quadruple room. Featuring free toiletries, this quadruple room includes a private bathroom with a bath. Among the room amenities are a wardrobe, tumble dryer, parquet floors as well as a patio and mountain views. Fully wheelchair accessible."
+          },
+          bathroom: {
+            fr: ["Articles de toilette gratuits", "Toilettes", "Baignoire ou douche", "Serviettes", "Papier toilette"],
+            es: ["Artículos de aseo gratuitos", "Inodoro", "Bañera o ducha", "Toallas", "Papel higiénico"],
+            en: ["Free toiletries", "Toilet", "Bath or shower", "Towels", "Toilet paper"]
+          },
+          views: {
+            fr: ["Vue sur la montagne", "Vue sur la ville"],
+            es: ["Vista a la montaña", "Vista a la ciudad"],
+            en: ["Mountain view", "City view"]
           },
           amenities: { 
-            fr: ["Accès Fauteuil Roulant", "Cheminée", "Patio", "Vue Montagne", "Parquet"], 
-            es: ["Acceso Silla de Ruedas", "Chimenea", "Patio", "Vista Montaña", "Parqué"], 
-            en: ["Wheelchair Accessible", "Fireplace", "Patio", "Mountain View", "Parquet"] 
+            fr: ["Accès Fauteuil Roulant", "Cheminée", "Patio", "Parquet", "Prise près du lit", "Chauffage", "Sèche-linge", "Armoire ou penderie", "Étendoir"],
+            es: ["Acceso Silla de Ruedas", "Chimenea", "Patio", "Parqué", "Enchufe cerca de la cama", "Calefacción", "Secadora", "Armario", "Tendedero"],
+            en: ["Wheelchair Accessible", "Fireplace", "Patio", "Parquet flooring", "Socket near the bed", "Heating", "Tumble dryer", "Wardrobe", "Clothes rack"] 
+          },
+          rating: "8.5",
+          reviews: "32",
+          smoking: {
+            fr: "Non-fumeurs",
+            es: "No fumadores",
+            en: "Non-smoking"
           }
         },
         {
@@ -151,17 +243,40 @@ export const siteData = {
             en: "Budget Double Room" 
           },
           details: "15m² | 2 Pax",
+          capacity: 2,
           price: "45",
           image: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=600",
           beds: {
-            fr: "1 grand lit double",
-            es: "1 cama doble grande",
-            en: "1 large double bed"
+            fr: "1 grand lit double (1 lit au total)",
+            es: "1 cama doble grande (1 cama en total)",
+            en: "1 large double bed (1 bed total)"
+          },
+          description: {
+            fr: "La chambre double offre une armoire, un sèche-linge, une terrasse avec vue sur la cour intérieure ainsi qu'une salle de bains privative avec baignoire.",
+            es: "La habitación doble ofrece armario, secadora, terraza con vista al patio interior y baño privado con bañera.",
+            en: "The double room offers a wardrobe, tumble dryer, a terrace with an inner courtyard view as well as a private bathroom featuring a bath."
+          },
+          bathroom: {
+            fr: ["Articles de toilette gratuits", "Toilettes", "Baignoire ou douche", "Serviettes", "Papier toilette"],
+            es: ["Artículos de aseo gratuitos", "Inodoro", "Bañera o ducha", "Toallas", "Papel higiénico"],
+            en: ["Free toiletries", "Toilet", "Bath or shower", "Towels", "Toilet paper"]
+          },
+          views: {
+            fr: ["Vue sur une cour intérieure"],
+            es: ["Vista al patio interior"],
+            en: ["Inner courtyard view"]
           },
           amenities: { 
-            fr: ["Terrasse", "Vue Cour Intérieure", "Calme", "Parquet", "Chauffage"], 
-            es: ["Terraza", "Vista Patio Interior", "Tranquila", "Parqué", "Calefacción"], 
-            en: ["Terrace", "Inner Courtyard View", "Quiet", "Parquet", "Heating"] 
+            fr: ["Terrasse", "Parquet", "Prise près du lit", "Chauffage", "Sèche-linge", "Armoire ou penderie", "Étendoir", "Vue Cour Intérieure", "Calme"],
+            es: ["Terraza", "Parqué", "Enchufe cerca de la cama", "Calefacción", "Secadora", "Armario", "Tendedero", "Vista Patio Interior", "Tranquila"],
+            en: ["Terrace", "Parquet flooring", "Socket near the bed", "Heating", "Tumble dryer", "Wardrobe", "Clothes rack", "Inner Courtyard View", "Quiet"] 
+          },
+          rating: "8.5",
+          reviews: "32",
+          smoking: {
+            fr: "Non-fumeurs",
+            es: "No fumadores",
+            en: "Non-smoking"
           }
         }
       ]

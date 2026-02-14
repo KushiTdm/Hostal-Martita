@@ -112,16 +112,16 @@ export function Location() {
             transition={{ duration: 0.8 }}
           >
             <div className="rounded-2xl overflow-hidden shadow-2xl h-full min-h-[400px]">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6886839047816!2d-78.90357882395967!3d-0.8590833352788768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d452a5e5f5e5e5%3A0x5e5e5e5e5e5e5e5e!2sQuilotoa!5e0!3m2!1sen!2sec!4v1234567890123"
-                width="100%"
-                height="100%"
-                style={{ border: 0, minHeight: '400px' }}
-                allowFullScreen
-                loading="lazy"
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.130386708687!2d-78.91974482405021!3d-0.8703246353341857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d3eda12bbd07cb%3A0x1e23c6e7ccce2891!2sMartita's%20House%20Hostal!5e0!3m2!1sfr!2sec!4v1709245000000!5m2!1sfr!2sec" 
+                width="100%" 
+                height="450" 
+                style={{ border: 0, borderRadius: "12px" }} 
+                allowFullScreen 
+                loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Quilotoa Map"
-              />
+              >
+              </iframe>
             </div>
           </motion.div>
         </div>

@@ -90,19 +90,6 @@ export function Footer() {
 
         <div className="border-t border-gray-600 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-sm">
-            <p className="text-gray-300 flex items-center justify-center gap-2">
-              {language === 'fr'
-                ? 'Fait avec'
-                : language === 'es'
-                ? 'Hecho con'
-                : 'Made with'}
-              <Heart className="text-warmth" size={18} fill="currentColor" />
-              {language === 'fr'
-                ? 'par Martita, José et Dane'
-                : language === 'es'
-                ? 'por Martita, José y Dane'
-                : 'by Martita, José, and Dane'}
-            </p>
 
             <div className="flex items-center space-x-2 text-gray-400">
               <span className="hidden sm:inline">

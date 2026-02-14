@@ -44,7 +44,7 @@ export function Testimonials() {
 
         {/* Desktop Carousel - 3 cards */}
         <div className="hidden md:block relative">
-          <div className="overflow-hidden">
+          <div className="overflow-visible pt-6">
             <div className="grid grid-cols-3 gap-8">
               {getVisibleTestimonials().map((quote, index) => (
                 <motion.div
@@ -52,13 +52,13 @@ export function Testimonials() {
                   initial={{ opacity: 0, x: 50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="bg-white p-8 rounded-2xl shadow-xl relative"
+                  className="bg-white p-8 pt-10 rounded-2xl shadow-xl relative"
                 >
-                  <div className="absolute -top-4 left-8 bg-warmth w-12 h-12 rounded-full flex items-center justify-center">
+                  <div className="absolute -top-6 left-8 bg-warmth w-12 h-12 rounded-full flex items-center justify-center">
                     <Quote className="text-white" size={24} />
                   </div>
 
-                  <p className="text-gray-700 italic mb-6 mt-4 leading-relaxed">
+                  <p className="text-gray-700 italic mb-6 leading-relaxed">
                     "{quote.text[language]}"
                   </p>
 
@@ -97,20 +97,20 @@ export function Testimonials() {
         </div>
 
         {/* Mobile Carousel - 1 card */}
-        <div className="md:hidden relative">
-          <div className="overflow-hidden">
+        <div className="md:hidden relative px-8">
+          <div className="overflow-visible pt-6">
             <motion.div
               key={currentIndex}
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="bg-white p-8 rounded-2xl shadow-xl relative"
+              className="bg-white p-8 pt-10 rounded-2xl shadow-xl relative"
             >
-              <div className="absolute -top-4 left-8 bg-warmth w-12 h-12 rounded-full flex items-center justify-center">
+              <div className="absolute -top-6 left-8 bg-warmth w-12 h-12 rounded-full flex items-center justify-center">
                 <Quote className="text-white" size={24} />
               </div>
 
-              <p className="text-gray-700 italic mb-6 mt-4 leading-relaxed">
+              <p className="text-gray-700 italic mb-6 leading-relaxed">
                 "{testimonials.quotes[currentIndex].text[language]}"
               </p>
 
@@ -134,13 +134,13 @@ export function Testimonials() {
 
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 bg-white rounded-full p-2 shadow-lg"
+            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg z-10"
           >
             <ChevronLeft size={20} className="text-lagoon" />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 bg-white rounded-full p-2 shadow-lg"
+            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg z-10"
           >
             <ChevronRight size={20} className="text-lagoon" />
           </button>
