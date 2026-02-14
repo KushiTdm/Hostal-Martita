@@ -70,7 +70,7 @@ export function Header() {
 
           <a
             href={`https://wa.me/${siteData.config.whatsapp_main}`}
-            className="hidden md:flex items-center gap-2 bg-warmth text-white px-4 py-2 rounded-lg hover:bg-warmth/90 transition-colors"
+            className="hidden md:flex items-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg hover:bg-[#20BA5A] transition-colors"
           >
             <Phone size={18} />
             <span>WhatsApp</span>
@@ -100,7 +100,7 @@ export function Header() {
             ))}
             <a
               href={`https://wa.me/${siteData.config.whatsapp_main}`}
-              className="flex items-center gap-2 bg-warmth text-white px-4 py-2 rounded-lg hover:bg-warmth/90 transition-colors justify-center"
+              className="flex items-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg hover:bg-[#20BA5A] transition-colors justify-center"
             >
               <Phone size={18} />
               <span>WhatsApp</span>

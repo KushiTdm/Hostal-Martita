@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { MapPin, AlertTriangle, Phone, Mail } from 'lucide-react';
+import { MapPin, AlertTriangle, Phone } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { siteData } from '../data/content';
 
@@ -85,7 +85,7 @@ export function Location() {
               </div>
 
               <div className="flex items-start gap-4">
-                <Mail className="text-lagoon flex-shrink-0" size={28} />
+                <MapPin className="text-lagoon flex-shrink-0" size={28} />
                 <div>
                   <h3 className="font-bold text-xl mb-2 text-earth">
                     {language === 'fr'
